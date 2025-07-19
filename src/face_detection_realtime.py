@@ -3,9 +3,7 @@ import torch
 from facenet_pytorch import MTCNN
 
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
-
 model = MTCNN(keep_all=True, device=device)
-
 cap = cv2.VideoCapture(0)
 
 while True:
